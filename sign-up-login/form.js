@@ -1,3 +1,46 @@
+function validation2(){
+	var email = document.getElementById('email').value;
+	var pass = document.getElementById('pass').value;
+	var confirmpass = document.getElementById('conpass').value;
+	console.log(email)
+	if(email==""){
+		document.getElementById('mail').innerHTML =" ** Please fill the email idx` field";
+		return false;
+	}
+	if(email.indexOf('@') <= 0 ){
+		document.getElementById('mail').innerHTML =" ** @ Invalid Position";
+		return false;
+	}
+
+	if((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')){
+		document.getElementById('mail').innerHTML =" ** . Invalid Position";
+		return false;
+	}
+
+	
+	if(pass == ""){
+		document.getElementById('password').innerHTML =" ** Please fill the password field";
+		return false;
+	}
+	if((pass.length <= 5) || (pass.length > 20)) {
+		document.getElementById('password').innerHTML =" ** Passwords lenght must be between  5 and 20";
+		return false;	
+	}
+
+
+
+	if(pass!=confirmpass){
+		document.getElementById('confrmpass').innerHTML =" ** Password does not match the confirm password";
+		return false;
+	}
+	if(confirmpass == ""){
+		document.getElementById('confrmpass').innerHTML =" ** Please fill the confirmpassword field";
+		return false;
+	}
+
+
+}
+
 function validation(){
 	var emaill=document.getElementById("email2").value;
     var passl=document.getElementById("pass2").value;
