@@ -1,0 +1,86 @@
+<html>
+<head>
+  <title>Login -Habili.</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form name="register" action="#" onsubmit="validation()" >
+                <h1>Create Account</h1>
+
+                <input id="user" type="text" placeholder="Name"  autocomplete="off" />
+                <span id="username"></span>
+
+                <input id="email" type="text" placeholder="Email" autocomplete="off" />
+                <span id="mail"></span>
+
+                <input id="pass" type="text" placeholder="Password"  autocomplete="off" />
+                <span id="password"></span>
+
+                <input id="conpass" type="password" placeholder="Confirm Password"  autocomplete="off" />
+                <span id="confrmpass"></span>
+
+                <input id="mob-num" placeholder="Mobile Number" />
+                <span id="mobileno">  </span>
+
+                <label class="check">
+                    <input type="checkbox">
+                    <small class="rem">Remember Me</small>
+                </label>
+                <input  class="submit-in" type="submit" value="Sign up">
+            </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <form name="login" action="#"  onsubmit="validation()">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input id="email2" placeholder="Email" autocomplete="off"/>
+                <span id="mail2"></span>
+
+
+                <input  id="pass2" type="password" placeholder="Password"  autocomplete="off" />
+                <span id="password2"></span>
+             
+                <a href="#">Forgot your password?</a>
+                <input class="submit-in" type="submit" value="Sign In">
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp" type="submit">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="form.js"></script>
+</body>
+
+</html>
+
+
+
+
+
